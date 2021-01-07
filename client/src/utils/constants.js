@@ -1,0 +1,91 @@
+export const ENV = {
+  PRODUCTION: {
+    KEY: 'production',
+    URL: 'https://api.stamurai.com',
+  },
+  DEVELOPMENT: {
+    KEY: 'development',
+    URL: 'https://api.staging.stamurai.com',
+  },
+  LOCAL: {
+    KEY: 'local',
+    URL: 'http://localhost:8080',
+  },
+};
+
+export const TASK_TYPES = {
+  PRACTICE: 'PRACTICE',
+  LEARN: 'LEARN',
+  QUIZ: 'QUIZ',
+  ASSESSMENT: 'ASSESSMENT',
+  MEDITATION: 'MEDITATION',
+  TEXT: 'TEXT',
+  READING: 'READING',
+  VC: 'VC',
+  PHONATION_GIVEN_SOUND: 'PHONATION_GIVEN_SOUND',
+  URL: 'URL',
+};
+
+export const BLOCK_TYPES = {
+  PRACTICE: 'PRACTICE',
+  INTRO: 'INTRO',
+  CONCLUSION: 'CONCLUSION',
+};
+
+export const TYPE_MAPPINGS = {
+  LEARN: TASK_TYPES.LEARN,
+  MEDITATION: TASK_TYPES.MEDITATION,
+  PRACTICE_MIRROR: TASK_TYPES.PRACTICE,
+  PRACTICE_SWT: TASK_TYPES.PRACTICE,
+  PULL_OUT_TENSION: TASK_TYPES.PRACTICE,
+  TEXT: TASK_TYPES.TEXT,
+  ASSESSMENT: TASK_TYPES.ASSESSMENT,
+  assessment: TASK_TYPES.ASSESSMENT,
+  BREATHING: TASK_TYPES.BREATHING,
+  FLEXIBLE_MODELLING: TASK_TYPES.PRACTICE,
+  FLEXIBLE_SYLLABLE: TASK_TYPES.PRACTICE,
+  PRACTICE_FLEXIBLE_SYLLABLE: TASK_TYPES.PRACTICE,
+  PHONATION_GIVEN_SOUND: TASK_TYPES.PHONATION_GIVEN_SOUND,
+  READING: TASK_TYPES.READING,
+  DAF: TASK_TYPES.PRACTICE,
+  DAF_MIRROR: TASK_TYPES.PRACTICE,
+  VC: TASK_TYPES.VC,
+  QUIZ: TASK_TYPES.QUIZ,
+  URL: TASK_TYPES.URL,
+};
+
+export const TASK_TYPE_AND_MODEL_MAPPINGS = {
+  [TASK_TYPES.LEARN]: 'LearnExercise',
+  [TASK_TYPES.PRACTICE]: 'PracticeExercise',
+  [TASK_TYPES.QUIZ]: 'Quiz',
+  [TASK_TYPES.ASSESSMENT]: 'Assessment',
+};
+
+export const WEEK_DAYS_MAPPINGS = {
+  SUN: 0,
+  MON: 1,
+  TUE: 2,
+  WED: 3,
+  THU: 4,
+  FRI: 5,
+  SAT: 6,
+};
+
+export const WEEK_DAYS_REVERSE_MAPPINGS = {
+  0: 'SUN',
+  1: 'MON',
+  2: 'TUE',
+  3: 'WED',
+  4: 'THU',
+  5: 'FRI',
+  6: 'SAT',
+};
+
+export const ROLES = {
+  ADMIN: 'admin',
+  // TESTER: 'tester',
+  // CRON: 'cron',
+  // SERVER: 'server',
+  MODERATOR: 'moderator',
+  // THERAPIST: 'therapist',
+};
